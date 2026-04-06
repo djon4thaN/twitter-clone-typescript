@@ -9,8 +9,6 @@ O projeto simula a estrutura de uma rede social, com ênfase na construção de 
 ## Tecnologias utilizadas
 
 - TypeScript  
-- React (ajustar se aplicável)  
-- Styled Components ou CSS (ajustar conforme o projeto)  
 
 ## Funcionalidades
 
