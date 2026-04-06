@@ -1,43 +1,113 @@
-# Twitter Clone (TypeScript)
+# Social Media Interface Modeling (TypeScript)
 
-Aplicação front-end inspirada na interface do Twitter, desenvolvida com TypeScript, com foco em componentização, organização de código e aplicação de boas práticas no desenvolvimento de interfaces modernas.
+## Description
 
-## Visão geral
+This project consists of a front-end structure inspired by a social media platform, developed using TypeScript with a focus on component-based architecture, code organization, and separation of responsibilities.
 
-O projeto simula a estrutura de uma rede social, com ênfase na construção de componentes reutilizáveis, separação de responsabilidades e manutenção de um código escalável.
+It simulates core features of a social platform, such as user interactions, posts, and reactions, emphasizing reusable components and maintainable code structure.
 
-## Tecnologias utilizadas
+---
+
+## Objective
+
+The main objective of this project is to strengthen skills in:
+
+- TypeScript and static typing  
+- Component-based architecture  
+- Code organization and scalability  
+- Separation of concerns  
+- Front-end structure aligned with real-world applications  
+
+---
+
+## Project Structure
+
+```
+src/
+ ├── databases/
+ │   ├── like.ts
+ │   ├── tweets.ts
+ │   └── user.ts
+ ├── models/
+ │   ├── base.ts
+ │   ├── dislike.ts
+ │   ├── like.ts
+ │   ├── reaction.ts
+ │   ├── tweet.ts
+ │   └── user.ts
+ └── index.ts
+```
+
+### Core Modules
+
+- **Models**: Define the main entities and business logic (users, tweets, reactions)  
+- **Databases**: Simulate data persistence for application behavior testing  
+- **Index**: Entry point coordinating application flow  
+
+---
+
+## Features
+
+- Post feed structure simulation  
+- User interaction modeling (likes, dislikes, reactions)  
+- Reusable and modular components  
+- Clear separation between data and logic layers  
+
+---
+
+## Technologies
 
 - TypeScript  
+- Node.js  
 
-## Funcionalidades
+---
 
-- Estrutura de feed de postagens  
-- Componentes reutilizáveis  
-- Organização de layout baseada em aplicação real  
-- Separação lógica entre componentes e interface  
+## Architectural Notes
 
-## Arquitetura
+This project follows a modular and component-oriented structure, focusing on:
 
-O projeto foi estruturado com base em componentes independentes, permitindo maior escalabilidade, legibilidade e facilidade de manutenção do código.
+- Separation between data and domain logic  
+- Reusability of components  
+- Maintainable and readable code  
+- Foundation for scalable front-end applications  
 
-## Aprendizados aplicados
+Although simplified, the structure reflects concepts used in real-world and enterprise-level systems.
 
-- Tipagem estática com TypeScript  
-- Organização de aplicações front-end  
-- Componentização e reutilização de código  
-- Estruturação de interfaces inspiradas em sistemas reais  
+---
 
-## Status
+## Relevance for Enterprise Systems
 
-Projeto desenvolvido para fins de prática e consolidação de conceitos de desenvolvimento front-end.
+This project demonstrates important concepts applicable to enterprise environments:
 
-## Execução
+- Structured and modular application design  
+- Clear separation of responsibilities  
+- Readability and maintainability  
+- Front-end architecture aligned with scalable systems  
 
-```bash
-git clone https://github.com/djon4thaN/twitter-ts
-cd twitter-ts
+---
+
+## Notes
+
+This is an academic project focused on practicing front-end architecture and code organization. It does not represent a complete production-ready application.
+
+---
+
+## How to Run
+
+1. Install dependencies:
+
+```
 npm install
-npm start
+```
 
+2. Compile the project:
 
+```
+npx tsc
+```
+
+3. Run the project:
+
+```
+node dist/index.js
+```
